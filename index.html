@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <title>tommy.developer</title>
+    <style>
+        /* Gaya Umum */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: black;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Gaya untuk Kolom Gambar Profil */
+        .profile-image-container {
+            width: 100%;
+            max-width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            border: 2px solid #007bff;
+        }
+
+        .circle-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+        }
+        
+        .profile-name .material-symbols-outlined {
+         font-size: 24px;
+         color: #007bff;
+         margin-left: 4px;
+        }
+
+        .profile-description {
+         font-size: 12px;
+         color: #777;
+         margin-top: 20px;
+         text-align: left 20px;
+         line-height: 1.6; /* Atur jarak antar baris */
+        }
+
+        /* Tombol Lanjutkan */
+        .buttons {
+         margin-top: 290px; /* Jarak di atas tombol */
+         margin-bottom: 20px; /* Jarak di bawah tombol */
+        }
+
+        .buttons button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image-container">
+            <img src="https://iili.io/2CdWhPe.md.png" alt="Profile" class="circle-image">
+        </div>
+        <p class="profile-name">Tommy Developer
+            <span class="material-symbols-outlined">new_releases</span>
+        </p>
+<p class="profile-description">Web Developer | Menyukai Teknologi dan Desain<br>Masih dalam pengembangan</p>
+ <!-- Tambahkan keterangan di sini -->
+
+        <div class="buttons">
+            <button onclick="continueToNext()">Lanjutkan</button>
+        </div>
+
+        <footer>Design Tommy | Versi 1.0 ®</footer>
+    </div>
+
+    <script>
+        function continueToNext() {
+            // Arahkan ke halaman beranda atau halaman berikutnya
+            window.location.href = 'https://github.com/tommydev27/tommy.website1/'; // Ganti dengan URL yang sesuai
+        }
+    </script>
+</body>
+</html>
