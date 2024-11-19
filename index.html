@@ -4,36 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <title>tommy.developer</title>
     <style>
         /* Gaya Umum */
+                body {
+            font-family: Arial, sans-serif;
+             }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+
         }
 
         body {
+            background-image: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            color: #333;
+            min-height: 98vh;
         }
 
+
         .container {
-            width: 90%;
-            max-width: 400px;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            color: black;
-            text-align: center;
             position: relative;
+            text-align: center;
+            width: 320px;
+            border: 1px solid hsl(0, 0%, 100%); /* Garis melingkari */
+            background: transparent; /* Transparan untuk menghilangkan background */
+            padding: 0px;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            color: black;
+            transition: background 0.3s ease;
         }
+
 
         /* Gaya untuk Kolom Gambar Profil */
         .profile-image-container {
@@ -75,19 +87,21 @@
 
         /* Tombol Lanjutkan */
         .buttons {
-         margin-top: 290px; /* Jarak di atas tombol */
-         margin-bottom: 20px; /* Jarak di bawah tombol */
+         margin-top: 186px; /* Jarak di atas tombol */
+         margin-bottom: 60px; /* Jarak di bawah tombol */
         }
 
         .buttons button {
-            width: 100%;
-            padding: 12px;
+            width: 80%;
+            padding: 10px;
             background-color: #007bff;
             border: none;
             color: white;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
+
+            font-weight: bold;
             transition: background-color 0.3s ease;
         }
 
@@ -99,8 +113,35 @@
             margin-top: 10px;
             font-size: 12px;
             color: #007bff;
+            margin-bottom: 30px; 
             transition: color 0.3s ease;
         }
+        h3 {
+  font-size: 10px;
+  color: #333333;
+  text-align: center;
+  display: flex;
+ font-family: 'Siegra', monospace;
+  align-items: center;
+  justify-content: center;
+margin-top: 10px;  
+  }
+.material-symbols-outlined {
+  font-size: 15px;
+  color: #000;
+  margin-top: 0px;  
+    }
+            /* CSS untuk teks digital */
+    .digital-text {
+      font-size: 8px; /* Ukuran font */
+      color: #000; /* Warna hijau seperti tampilan digital */
+      font-family: 'Press Start 2P', monospace; /* Font digital dari Google Fonts */
+      letter-spacing: 1px; /* Menambah jarak antar huruf */
+      text-align: center; /* Meratakan teks ke tengah */
+      margin-top: 20px; /* Menambahkan jarak atas */
+        gap: 10px;
+    }
+        
     </style>
 </head>
 <body>
@@ -108,7 +149,7 @@
         <div class="profile-image-container">
             <img src="https://iili.io/2CdWhPe.md.png" alt="Profile" class="circle-image">
         </div>
-        <p class="profile-name">Tommy Developer
+        <p class="profile-name">Tommy Website
             <span class="material-symbols-outlined">check_circle</span>
         </p>
 <p class="profile-description">Web Developer | Menyukai Teknologi dan Desain<br>Masih dalam pengembangan</p>
@@ -117,7 +158,9 @@
         <div class="buttons">
             <button onclick="continueToNext()">Lanjutkan</button>
         </div>
-
+    <h3 class="digital-text">ANDROlD VERSI
+      <span class="material-symbols-outlined">android</span> </h3> 
+          
         <footer>Design Tommy | Versi 1.0 ®</footer>
     </div>
 
